@@ -11,13 +11,15 @@
 layout:true
 
 <div class="header">
-  <img src="images/logo_new.png" class="logo_new">
-  <p class="header-text">Open Source Mapping</p>
+  
+  <p class="header-text">Introduction to Open Source Mapping</p>
 </div>
 <div class="footer">
   <p class="footer-text">
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Open Source Mapping</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-  </p>
+    <img src="images/logo_new.png" class="logo_new">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+      <img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+      </p>
 </div>
 
 
@@ -35,6 +37,9 @@ class: center,middle
 ### Follow along at: http://bit.ly/intro-open-source-mapping
 #### See the code at: http://bit.ly/intro-open-source-mapping-code
 
+<p class="license-text">Introduction to Open Source Mapping by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="border-width:0;width:8%" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 ---
 
 # Goals for this morning
@@ -84,6 +89,7 @@ class:center,middle
 
 ---
 
+class:middle
 ![img-center-100](images/reference.png)
 
 ---
@@ -220,7 +226,7 @@ class:center,middle
 
 # [QGIS](http://www.qgis.org/)
 
-![img-center-100](images/qgis.png)
+![img-center-80](images/qgis.png)
 Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9), DOT Responsible Agency 1 January - 30 June 2015
 
 ---
@@ -270,10 +276,12 @@ class:center,middle
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create(
-      // {
-      //   slideNumberFormat: ""}
-        );
+      var slideshow = remark.create({
+      
+      //   slideNumberFormat: ""
+
+        // ratio: '16:9'
+        });
     </script>
   </body>
 </html>
