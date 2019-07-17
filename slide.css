@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+/*@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);*/
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
@@ -14,19 +14,24 @@ body {
 }
 
 .remark-slide-number {
-  font-size:0.75em;
+  font-size:0.6em;
+  margin: 1px auto;
+  width:50%;
   bottom:5px;
-  right:450px;
+  /*right:450px;
+  vertical-align:middle;
+  display:inline-block;*/
+  text-align:left;
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Rubik'; 
 }
 
 img[alt=Creative-Commons-License]{
-  width:8%;
+  width:6%;
   position: fixed;
   right:10px;
-  bottom:8px;
+  bottom:7px;
   /*float:right;*/
   /*display: inline;*/
 }
@@ -35,13 +40,14 @@ img.logo_new {
    position: fixed;
    /*top: 7px; */
    left: 10px;
-   bottom: 2px;
-   width: 12%;
+   bottom: -1px;
+   width: 10%;
 }
 
 div.header, div.footer {
   display:block; 
   position: fixed;
+  height:25px;
   /*color:gray; */
   width:100%;
   /*color chosen by Fernando*/
@@ -56,7 +62,7 @@ div.header {
   font-size:1em; 
   top: 0px;
   left: 0px;
-  height: 35px;
+  /*height: 30px;*/
   background: -moz-linear-gradient(bottom, #f9f7ed 0%, #f2efda 100%); 
   background: -webkit-linear-gradient(bottom, #f9f7ed 0%, #f2efda 100%);
   background: linear-gradient(to top, bottom, #f9f7ed 0%, #f2efda 100%);
@@ -66,7 +72,7 @@ div.header {
 div.footer {
   bottom: 0px;
   left:0px;
-  height: 30px;
+  /*height: 30px;*/
   background: -moz-linear-gradient(top, #f9f7ed 0%, #f2efda 100%); 
   background: -webkit-linear-gradient(top, #f9f7ed 0%, #f2efda 100%);
   background: linear-gradient(to bottom, top, #f9f7ed 0%, #f2efda 100%);
@@ -87,7 +93,7 @@ p.header-text {
   /*left: 375px;*/
   /*height: 30px;*/
   vertical-align:middle;
-  margin:7px 0 0 0;
+  margin:2px 0 0 0;
   text-transform: uppercase;
 }
 p.footer-text{
@@ -107,23 +113,38 @@ p.license-text {
 }
 
 
-a:visited, a:link, a:active { text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:visited, a:link, a:active { 
+  text-decoration: none; 
+  /*text-transform: lowercase;*/
+}
+a:hover {
+  text-decoration: underline; 
+/*  text-transform: lowercase;*/
+}
 
 h1 {
   font-family: 'Oswald';
   font-weight: medium;
   color:#e77b4e;
   text-transform: uppercase;
-  margin: 10px;
+  margin: 12px 5px 10px 5px;
+  letter-spacing:0.025em;
 }
 
-h2, h3, h4, h5, h6 {
+/*h2, h3, h4, h5, h6 {
   font-family: 'Oswald';
   font-weight: 200;
   color:#4f655a;
   margin: 20px 0 20px 0;
+}*/
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Oswald';
+  font-weight: medium;
+  color:#4f655a;
+  margin: 15px 5px 15px 5px;
   /*text-transform: uppercase;*/
+  letter-spacing:0.035em;
 }
 
 p {
