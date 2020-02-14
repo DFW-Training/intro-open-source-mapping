@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Open Source Mapping</title>
+    <title>Overview of GIS for Non-Profits</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="slide.css"/>
   </head>
@@ -12,7 +12,7 @@ layout:true
 
 <div class="header">
   
-  <p class="header-text">Introduction to Open Source Mapping</p>
+  <p class="header-text">Overview of GIS <br>for Non-Profits</p>
 </div>
 <div class="footer">
   <p class="footer-text">
@@ -22,39 +22,326 @@ layout:true
       </p>
 </div>
 
-
-
 --
 
 class: center,middle
 
 ![img-center-50](images/datapolitan-logo-01.svg)
-# Introduction to Open Source Mapping
+# Overview of GIS for Non-Profits
 
 - - -
 
 ## Facilitator: Richard Dunks
-### Follow along at: http://bit.ly/intro-open-source-mapping
-#### See the code at: http://bit.ly/intro-open-source-mapping-code
+### Follow along at: 
+#### See the code at: 
 
-<p class="license-text">Introduction to Open Source Mapping by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+<p class="license-text">Overview of GIS for Non-Profits by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="border-width:0;width:8%" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 ---
 
-# Goals for this morning
+# Goals for Today
 --
 
-+ Quickly review of different types of maps and discuss their use
++ Provide a gentle introduction to GIS
 --
 
-+ Provide a survey of common mapping tools
++ Lead you through several basic exercises using QGIS
 --
 
-+ Discuss the difference between open-source and proprietary software as it relates to GIS and mapping
++ Have fun making maps
+
+
+---
+
+exclude:true
+
+# Outline
++ Introductions
++ Map Exercise 1 
++ Lecture/Facilitated Discussion - "What is GIS?"
++ Break
++ Facilitated Discussion - "What could you map?"
++ Map Exercise 2
++ Wrap-up and Further Resources 
+
+---
+
+class:center, middle
+# Introductions
++ Who You Are
++ Where You Work
++ One Thing You Hope to Learn
+
+---
+
+class:center,middle
+# Let's Map
+
+---
+
+# QGIS Getting Started
+![img-center-100](images/qgis-blank.png)
+
+---
+
+# QGIS Getting Started
+![img](images/qgis-data-source-manager.png)
+
+---
+
+# QGIS Getting Started
+![img-center-100](images/qgis-data-source-manager-1.png)
+
+---
+
+# QGIS Getting Started
+![img-center-80](images/qgis-data-source-manager-2.png)
+
+---
+
+# QGIS Getting Started
+![img-center-100](images/qgis-data-source-manager-3.png)
+
+---
+
+# QGIS Getting Started
+![img-center-100](images/qgis-boros-1.png)
+
+---
+
+# Attribute Table (Right click on layer)
+![img-center-100](images/qgis-boros-2.png)
+---
+
+# Attribute Table
+![img-center-95](images/qgis-boros-3.png)
+
+---
+
+# Attribute Table
+
++ Each feature has a corresponding row in the attribute table
++ When a feature is selected on the map, that row is selected in the attribute table
++ And vice versa
+
+---
+
+# Styling Features
++ Click the button on the top left of the Layers panel
++ In the Layer Styling panel, select "Categorized"
+        
+![img-left-40](images/qgis-layer-styling-panel.png)
+![img-right-30](images/qgis-boros-4.png)
+
+---
+
+# Styling Features
++ Select the column that has the data you want to style
+    
+![img-center-90](images/qgis-boros-5.png)
+
+---
+
+# Add labels to data
++ In the Layer Styling panel select the Labels tab, "Single labels"
+
+![img-center-80](images/labeling1.png)
+
+---
+
+# Add labels to data
++ Select the column that has the data you want to use for labels
+
+![img-center-80](images/labeling2.png)
+
+---
+
+# Add labels to data
+![img-center-100](images/qgis-boros-8.png)
+
+---
+
+# Styling Labels
+
+![img-left-40](images/qgis-boros-6.png)
+![img-right-40](images/qgis-boros-7.png)
+
+---
+
+# Your turn
++ Style the polygons however you'd like
++ Change the outline color or add a pattern
++ Style the labels
++ Change the font, the font size, or other attributes
+
+---
+
+class:center,middle
+# What did we just do?
+
+---
+
+class:center,middle
+# Some Basic Concepts
+
+---
+
+# Geographic Information System (GIS)
 --
 
-+ Practice using an online, interactive webmapping service (CARTO) to create a simple interactive map using open data
+> Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface
+
++ [National Geographic Education Encyclopedia](https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
+
+---
+
+# Or more simply
+
+> In a GIS, you connect _**data**_ with _**geography**_.
+
++ [GISgeography.com](http://gisgeography.com/what-gis-geographic-information-systems/)
+
+---
+
+# Geographic Information Systems (GIS)
+--
+
++ Create interactive queries (user-created searches)
+--
+
++ Analyze spatial information
+--
+
++ Edit data in maps
+--
+
++ Present the results of all these operations
+
+---
+
+class:center,middle
+# Some More Key Concepts
+
+---
+
+# Layers
+![img-center-60](images/gis-layers.jpg)
+#### Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
+
+---
+
+# Basic Map Using QGIS
+![img-center-70](images/spatial_example.png)
+
+---
+
+# Points  
+[![img-left-43](images/point_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-55](images/spatial_example.png)
+
+---
+
+# Lines
+[![img-left-43](images/polyline_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-55](images/spatial_example.png)
+
+---
+
+# Polygons
+[![img-left-43](images/polygon_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-55](images/spatial_example.png)
+
+
+---
+
+# Shapefiles
+--
+        
++ Basic file for storing map elements
+--
+
++ Stores spatial data, like points, lines, and polygons
+--
+
++ Multiple files comprise a "shapefile"
+
+--
+
+![img-center-80](images/file_struct1.png)
+
+---
+
+# Shapefiles
+
+![img-center-80](images/file_struct1.png)
+--
+
++ .shp—The main file that stores the feature geometry
+--
+
++ .dbf—The dBASE table that stores the attribute information of features
+
+---
+
+# Shapefiles
+
+![img-center-80](images/file_struct1.png)
+
++ .prj—The file that stores the coordinate system information
+--
+
++ .shx—The index file that stores the index of the feature geometry
+
+---
+
+# You might also see
+--
+
++ .cpg—Identifies the character set to be used
+--
+
++ .sbn and .sbx—The files that store the spatial index of the features
+
+---
+
+# Shapefiles
+
++ Have a few limitations
+--
+
++ One geometry type (Point, Line, Polygon) per shapefile
+--
+
++ So sometimes you end up with this
+![img](images/file_struct2.png)
+
+---
+
+# Shapefiles
+--
+
++ Column names can only be letters, numbers, and underscores "_"
+--
+
++ Column names can only be ten characters long
+
+--
+
+![img-center-100](images/shapefile-column-names.png)
+
+
+---
+
 
 
 ---
@@ -64,61 +351,55 @@ class: center, middle
 
 ---
 
+exclude:true
 class:center,middle
 # Types of Maps
 
 ---
 
+exclude:true
+
 # General Reference Maps
-
---
-
 + Show important physical features of an area
---
-
 + Include natural and man-made features
---
-
 + Usually meant to help aid in the navigation or discovery of locations
---
-
 + Usually fairly simple
---
-
 + Can be stylized based on the intended audience (tourists vs locals)
 
 ---
+
+exclude:true
 
 class:middle
 ![img-center-100](images/reference.png)
 
 ---
 
+exclude:true
 # Thematic Maps
-
---
-
 + Focuses on a specific theme or subject area
---
-
 + Features on the map represent the phenomenon being mapped
---
-
 + Spatial features used for reference
+
 ---
 
+exclude:true
 ![img-center-95](images/thematic1.png)
 
 .caption[Source: http://www.usna.usda.gov/Hardzone/ushzmap.html]
 
 ---
 
+
+exclude:true
 # Choropleth
 ![img-center-70](images/choropleth.png)
 
 .caption[[Click for Source](http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping)]
 
 ---
+
+exclude:true
 
 # Choropleth
 
@@ -128,6 +409,8 @@ class:middle
 
 ---
 
+
+exclude:true
 # Area Cartogram (Electoral Votes)
 ![img-center-60](images/Cartogram_US.png)
 
@@ -135,6 +418,8 @@ class:middle
 
 ---
 
+
+exclude:true
 # Dorling Cartogram (Obesity)
 ![img-center-100](images/darling.png)
 
@@ -142,12 +427,16 @@ class:middle
 ]
 ---
 
+
+exclude:true
 # The Tools
 
 ![img-center-100](images/gis.png)
 
 ---
 
+
+exclude:true
 # ArcGIS
 
 ![img-center-large](images/arcgis.jpg)
@@ -156,15 +445,11 @@ class:middle
 
 ---
 
+
+exclude:true
 # Google Earth
 
 ![img-center-100](images/google_earth.png)
-
----
-
-# Google Fusion Tables
-<iframe width="100%" height="430" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col54%2C+col55+from+1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ+where+col3+%3E%3D+0+and+col3+%3C%3D+4+and+col26+%3D+2+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=40.844685&amp;lng=-73.915349&amp;t=1&amp;z=12&amp;l=col54&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=26&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG"></iframe>
-Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnight and 4 am in the Bronx](https://www.google.com/fusiontables/DataSource?docid=1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ#map:id=3)
 
 ---
 
@@ -231,6 +516,8 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
+
+exclude:true
 # [Carto](https://carto.com/)
 <iframe width="100%" height="480" frameborder="0" src="https://richard-datapolitan.carto.com/viz/c0d4f39e-962e-11e4-9b3b-0e9d821ea90d/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
@@ -238,6 +525,8 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
+
+exclude:true
 # Disclaimer
 --
 
@@ -247,11 +536,15 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ## But this isn't a sales session, merely an opportunity to share the technology with Columbia students
 
 ---
+
+exclude:true
 class:center,middle
 # So Let's Create a Map
 
 ---
 
+
+exclude:true
 # Getting Set-up
 1. Go to https://carto.com
 2. Register for an account
@@ -260,6 +553,8 @@ class:center,middle
 
 ---
 
+
+exclude:true
 # An example of what you can do
 <iframe width="100%" height="480" frameborder="0" src="https://richard-datapolitan.carto.com/viz/bb1e6638-b324-11e5-bf15-0ef7f98ade21/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 <!-- ![img-full](images/cdb2.png) -->
@@ -268,7 +563,7 @@ class:center,middle
 
 # Thank You
 + [richard@datapolitan.com](mailto:richard@datapolitan.com)
-+ http://blog.datapolitan.com
++ http://www.datapolitan.com
 + [@rdunks1](https://twitter.com/rdunks1)/[@datapolitan](https://twitter.com/Datapolitan)
 
 
