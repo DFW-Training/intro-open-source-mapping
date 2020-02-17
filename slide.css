@@ -129,6 +129,7 @@ h1 {
   text-transform: uppercase;
   margin: 12px 5px 10px 5px;
   letter-spacing:0.025em;
+  /*font-size: 45px;*/
 }
 
 /*h2, h3, h4, h5, h6 {
@@ -190,6 +191,10 @@ img[alt=img-left-35]{
 }
 img[alt=img-left-40]{
   width:40%;
+  float:left;
+}
+img[alt=img-left-43]{
+  width:43%;
   float:left;
 }
 img[alt=img-left-45]{
@@ -366,7 +371,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-  font-size:3em;
+  font-size:2.25em;
 }
 
 code, tt {
