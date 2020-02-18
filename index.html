@@ -38,6 +38,23 @@ class: center,middle
 <p class="license-text">Overview of GIS for Non-Profits by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="border-width:0;width:8%" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+
+---
+
+# Assumptions
+--
+
++ You want to know how to analyze and display spatial data
+--
+
++ You have little experience with mapping and spatial analysis
+--
+
++ You aren't familiar with QGIS
+--
+
++ You are well-meaning and motivated to learn
+
 ---
 
 # Goals for Today
@@ -50,7 +67,6 @@ class: center,middle
 --
 
 + Have fun making maps
-
 
 ---
 
@@ -74,27 +90,11 @@ exclude:true
 
 ---
 
-# Assumptions
---
-
-+ You want to know how to analyze and display spatial data
---
-
-+ You have little experience with mapping and spatial analysis
---
-
-+ You aren't familiar with QGIS
---
-
-+ You are well-meaning and motivated to learn
-
----
-
 class:center,middle
 # Let's Make a Map
-<!-- 
-![img-center-100](images/excited.gif)
- -->
+
+![img-center-70](images/qgis-cd-styled.PNG)
+
 
 ## [Download this Data](data/Current_Dallas_Council_Districts.zip) and Unzip the File
 
@@ -116,22 +116,22 @@ class:center,middle
 ---
 
 # QGIS Getting Started
-![img-center-80](images/qgis-data-source-manager-2.png)
+![img-center-80](images/qgis-data-source-manager-2.PNG)
 
 ---
 
 # QGIS Getting Started
-![img-center-100](images/qgis-data-source-manager-3.png)
+![img-center-100](images/qgis-data-source-manager-3.PNG)
 
 ---
 
 # QGIS Getting Started
-![img-center-100](images/qgis-cd-1.PNG)
+![img-center-90](images/qgis-cd-1.PNG)
 
 ---
 
 # Attribute Table
-![img-center-100](images/qgis-cd-2.PNG)
+![img-center-90](images/qgis-cd-2.PNG)
 ---
 
 # Attribute Table
@@ -155,55 +155,93 @@ class:center,middle
 # Styling Features
 --
 
-+ Click the button on the top left of the Layers panel
---
++ Right click the layer and select "Properties"
 
-+ In the Layer Styling panel, select "Categorized"
---
-        
-![img-left-40](images/qgis-layer-styling-panel.png)
-![img-right-30](images/qgis-boros-4.png)
+![img-center-90](images/qgis-cd-4.PNG)
 
 ---
 
 # Styling Features
-+ Select the column that has the data you want to style
-    
-![img-center-90](images/qgis-boros-5.png)
++ In the Layer Properties window, click the "Symbology" tab
+--
+
++ Click the "Single Symbol" and select "Categorized" from the drop-down menu
+--
+
+
+![img-center-85](images/qgis-cd-5.PNG)
+---
+
+# Styling Features
++ In the "Value" field, select the column that has the data you want to style
+--
+
++ In our case, this is the "council" column
+--
+
+
+![img-center-100](images/qgis-cd-6.PNG)
+---
+
+# Styling Features
++ Then click "Classify" (bottom left)
+--
+
+
+![img-center-85](images/qgis-cd-7.PNG)
+--
+
++ This should give each unique value in the column its own color
+
+---
+
+# Styling Features
++ Click "Ok" (or "Apply" to preview)
+
+![img-center-80](images/qgis-cd-8.PNG)
 
 ---
 
 # Add labels to data
-+ In the Layer Styling panel select the Labels tab, "Single labels"
++ In the Layer Properties window click the Labels tab
++ Select "Single labels"
 
-![img-center-80](images/labeling1.png)
-
----
-
-# Add labels to data
-+ Select the column that has the data you want to use for labels
-
-![img-center-80](images/labeling2.png)
+![img-center-95](images/qgis-cd-9.PNG)
 
 ---
 
 # Add labels to data
-![img-center-100](images/qgis-boros-8.png)
+--
+
++ Select the column that has the data you want to use for labels ("council")
+--
+
++ Style the text however you want
+--
+
+
+![img-center-80](images/qgis-cd-10.PNG)
 
 ---
 
-# Styling Labels
-
-![img-left-40](images/qgis-boros-6.png)
-![img-right-40](images/qgis-boros-7.png)
+# Add labels to data
+![img-center-90](images/qgis-cd-11.PNG)
 
 ---
 
 # Your turn
+--
+
 + Style the polygons however you'd like
+--
+
 + Change the outline color or add a pattern
+--
+
 + Style the labels
-+ Change the font, the font size, or other attributes
+--
+
++ Change the font, the font size, or other attributes (location)
 
 ---
 
@@ -295,7 +333,14 @@ class:center,middle
 ---
 
 class: center, middle
-# Why Do We Create Maps?
+# What is our Map missing?
+
+![img-center-95](images/qgis-cd-styled.PNG)
+
+---
+
+# Adding Basemaps
+
 
 ---
 
@@ -402,6 +447,11 @@ exclude:true
 ---
 
 class:center,middle
+# Wrap-up
+
+---
+
+class:center,middle
 # Proprietary vs Open-Source
 
 ---
@@ -452,11 +502,13 @@ class:center,middle
 
 ---
 
+exclude:true
 class:center,middle
 # Examples of Open Source Mapping Software
 
 ---
 
+exclude:true
 # [QGIS](http://www.qgis.org/)
 
 ![img-center-80](images/qgis.png)
@@ -476,10 +528,8 @@ exclude:true
 
 exclude:true
 # Disclaimer
---
 
 ## I'm a [CARTO Partner](https://carto.com/partners/)
---
 
 ## But this isn't a sales session, merely an opportunity to share the technology with Columbia students
 
@@ -509,6 +559,12 @@ exclude:true
 
 ---
 
+# Data Sources
++ [Dallas Open Data Portal](https://dallasopendata.com)
++ [DISD GIS Data](https://dallasisd.org/Page/29132)
+
+---
+
 # What We Talked About
 + Loading spatial data (shapefiles)
 + Styling spatial data (color, outline, labels, etc.)
@@ -517,6 +573,10 @@ exclude:true
 
 # What We Didn't Talk About
 + Projections
++ Geocoding
++ Creating heatmaps, hexagonal bins, choropleths, or other cool spatial visualizations
++ Advanced labeling
++ Connecting to databases
 
 ---
 
