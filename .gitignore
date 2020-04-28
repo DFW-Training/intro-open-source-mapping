@@ -2,3 +2,4 @@
 _rejects/
 *.sublime-project
 *.sublime-workspace
+*/Icon\*
